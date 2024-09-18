@@ -1,0 +1,187 @@
+/* Importing Google fonts - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('icons/background.webp');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    height: 100vh; 
+    margin: 0; /
+}
+.container {
+    background-color: transparent;
+    border-radius: 10px;
+    max-width: 425px;
+    flex-grow: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+}
+
+.search-bar .input-wrapper {
+    height: 54px;
+    width: 100%;
+    position: relative;
+}
+
+
+
+
+.search-bar .input-wrapper span {
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+.weather-section .current-weather {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 50px;
+    align-items: center;
+}
+
+.weather-section {
+    visibility: visible; 
+}
+
+.current-weather .weather-icon {
+    width: 180px;
+    aspect-ratio: 1; 
+}
+
+.current-weather .description {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.current-weather .temperature {
+    font-size: 3.38rem;
+    margin: 23px 0;
+    display: flex;
+}
+
+
+.current-weather .temperature span {
+    font-size: 1.56rem;
+    font-weight: 500;
+    margin: 5px 0 0 2px;
+}
+
+.search-bar {
+    align-items: center;
+    display: flex;
+    padding: 25px;
+    gap: 10px;
+}
+
+.search-bar .search-input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 20px 0 50px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+.search-bar .search-input:focus {
+    border-color: black;
+    transition: 0.1s ease;
+}
+
+.search-bar .location-button {
+    height: 54px;
+    width: 56px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    color: rgb(16, 16, 16);
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid gray;
+    transition: 0.3s ease;
+}
+
+.search-bar .location-button span {
+    font-size: 1.3rem;
+}
+
+.search-bar .location-button:hover {
+    color: rgb(155, 155, 158);
+    background: rgb(171, 171, 174);
+    border-color: black;
+}
+
+.search-bar .search-input::placeholder {
+    text-transform: none;
+}
+
+.hourly-weather {
+    padding: 16px 25px;
+    border-top: 1px solid rgb(8, 8, 8);
+}
+
+.hourly-weather .weather-list {
+    display: flex;
+    gap: 43px;
+    padding-bottom: 16px;
+    margin-bottom: -16px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+}
+
+.hourly-weather .weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.hourly-weather .weather-item {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-weight: 300;
+    align-items: center;
+}
+
+.hourly-weather:hover .weather-list {
+    scrollbar-color: rgb(135, 133, 133) transparent;
+}
+
+.hourly-weather .weather-item .weather-icon {
+    width: 28px;
+    aspect-ratio: 1;
+}
+
+.no-data{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.no-data-para{
+    font-size: 1rem;
+}
+
+.search-input{
+    color: rgb(10, 10, 10);
+}
+
+.material-symbols-rounded{
+    color: #000;
+}
